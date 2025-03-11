@@ -66,12 +66,15 @@ margin:10px 0;
 .search{
     display: grid;
     align-items:center;
+    box-sizing: border-box;
     background-color: white;
-    padding:10px 0;
+    padding:20px 0;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap:20px;
 }
+
+
+
 .search-bar>img{
     position: relative;
     top: 50%;
@@ -86,14 +89,41 @@ input{
     height: 20px;
     width: 500px;
     border-radius: 20px;
-    background-color: rgb(185, 185, 185,0.6);
+    background-color: rgb(185, 185, 185,0.4);
     border:none;
-    box-shadow: 2px 2px 10px 0px gray;
+    
 }
 .icons{
     grid-column: 2/3;
-    justify-self: center;
+    display: flex;
+    justify-self: end;
+    margin-right: 50px;
 }
 .projects-announcements-section{
+    
+}
+.icons>img{
+    width: 30px;
+    height: 30px;
+}
+.icons>img+img {
+    width: 30px;
+    height: 30px;
+    padding-left: 25px;
+}
+.icons>div{
+    display: grid;
+    align-items: center;
+    font-weight: 900;
+    padding-left: 25px;
+    font-family: "Roboto", sans-serif;
+}
+
+.greeting-section{
+    grid-row: 2/3;
+    margin-left: 50px;
+}
+
+.content{
     
 }
